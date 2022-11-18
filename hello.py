@@ -11,7 +11,7 @@ def login():
 
     content = request.get_json(force=True) # getting json from the request
 
-    # this is what we get form the frontend/browser
+    # this is what we get form the frontend / browser
     # {
     #   "username": "Frederic"
     #   "password": "123"
