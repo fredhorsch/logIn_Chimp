@@ -18,7 +18,7 @@ def login():
     # }
 
     if not 'username' in content or not 'password' in content:
-        return 'Geht nicht'
+        return 'Not working'
 
     liste = {}
 
@@ -27,16 +27,11 @@ def login():
 
     # liste = { 'frederic : '123', 'hans': '456' }
 
-    for username in liste: # gehe jeden user in der liste durch und speichere den key in der varaiable username, z.B. username wird zum string frederic
-        if username == content['username'] and liste[username] == content['password']: # überprüfe hier ob der aktuelle username z.B. frederic gleich der anfrage ist. Wenn ja, dann gehe weiter und überprüfe ob das passwort vom user aus der liste gleich dem passwort aus der Anfrage ist.
+    for username in liste: # go through each user in the list and store the key in the varaiable username, e.g. username becomes the string frederic
+
+        if username == content['username'] and liste[username] == content['password']: # Check here whether the current username, e.g. Frederic, is the same as the request. If so, then go on and check whether the password of the user from the list is the same as the password from the request.
             return 'ok'
 
 
-    return 'falsch' # nach der for schleife, schicke falsch zurück.
+    return 'wrong' # after the for loop, send back false.
 
-
-
-    #dictionaries
-    #for schleifen
-    #if mit else und not
-    #json
